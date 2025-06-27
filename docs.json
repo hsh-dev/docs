@@ -14,7 +14,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "시작하기",
             "pages": [
               "index",
               "quickstart",
