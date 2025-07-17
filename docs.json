@@ -3,7 +3,7 @@
   "theme": "maple",
   "name": "Blux Service Guide",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#152439",
     "light": "#07C983",
     "dark": "#15803D"
   },
@@ -14,7 +14,20 @@
         "tab": "Guides",
         "groups": [
           {
-            "icon": "play",
+            "group": "Blux 서비스 가이드",
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "튜토리얼",
+            "pages": [
+              "tutorials/tutorial"
+            ]
+          },
+          {
             "group": "시작하기",
             "pages": [
               "index",
