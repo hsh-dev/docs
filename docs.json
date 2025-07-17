@@ -66,14 +66,14 @@
     }
   },
   "logo": {
-    "light": "/logo/white.png",
-    "dark": "/logo/dark.png"
+    "light": "/logo/dark.png",
+    "dark": "/logo/white.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "elena:hi@blux.ai"
+        "href": "jeff:hi@blux.ai"
       }
     ],
     "primary": {
@@ -85,7 +85,7 @@
   "footer": {
     "socials": {
       "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/blux-ai"
     }
   }
 }
