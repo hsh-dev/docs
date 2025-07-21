@@ -19,7 +19,6 @@
         "groups": [
           {
             "group": "시작하기",
-            "hidden": true,
             "pages": [
               "index",
               "quickstart",
