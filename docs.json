@@ -21,14 +21,14 @@
             "group": "시작하기",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "intro",
+              "setting"
             ]
           },
           {
             "group": "튜토리얼",
             "pages": [
-              "tutorials/tutorial"
+              "tutorials/colduser_campaign"
             ]
           },
           {
