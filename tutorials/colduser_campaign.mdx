@@ -1,23 +1,17 @@
 ---
-title: "신규 유저 첫 구매를 위한 캠페인 레시피"
-tag: "고급"
+title: "신규 유저를 위한 캠페인 레시피"
+description: "아직 신규 유저를 위한 별도의 캠페인을 하고 있지 않다면, 이 가이드를 참고해 바로 시작해보세요!"
 ---
-
-**신규 가입 유저에게 어떤 메시지를 보내고 계신가요?**
-
-아직 별도의 캠페인을 하고 있지 않다면, 이 가이드를 참고해 바로 시작해보세요\!
 
 **왜 신규 유저를 위한 캠페인이 중요할까요?**
 
-회원 가입 직후 유저는 서비스에 관심은 있지만, 아직 서비스에 대해서 잘 몰라요.
-
-이 시점에 혜택을 소개하고 적극적으로 소통하면 충성 고객으로 전환될 가능성이 훨씬 높아집니다.
+회원 가입 직후 유저는 서비스에 관심은 있지만, 아직 서비스에 대해서 잘 몰라요. 이 시점에 혜택을 소개하고 적극적으로 소통하면 충성 고객으로 전환될 가능성이 훨씬 높아집니다.
 
 <CardGroup cols={2}>
   <Card title="케이스 1 : 첫 구매 혜택 강조를 통해 구매 유도하기" icon="sparkles" iconType="regular" href="tutorials/colduser_campaign#%EC%BC%80%EC%9D%B4%EC%8A%A4-1-%3A-%EC%B2%AB-%EA%B5%AC%EB%A7%A4-%ED%98%9C%ED%83%9D-%EA%B0%95%EC%A1%B0%EB%A5%BC-%ED%86%B5%ED%95%B4-%EA%B5%AC%EB%A7%A4-%EC%9C%A0%EB%8F%84%ED%95%98%EA%B8%B0">
     
   </Card>
-  <Card title="케이스 2 : 장바구니 담은 상품과 혜택 리마인드하기" icon="sparkles">
+  <Card title="케이스 2 : 장바구니 담은 상품과 혜택 리마인드하기" icon="sparkles" href="/tutorials/colduser_campaign#%EC%BC%80%EC%9D%B4%EC%8A%A4-2-%3A-%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88-%EB%8B%B4%EC%9D%80-%EC%83%81%ED%92%88%EA%B3%BC-%ED%98%9C%ED%83%9D-%EB%A6%AC%EB%A7%88%EC%9D%B8%EB%93%9C%ED%95%98%EA%B8%B0">
     
   </Card>
 </CardGroup>
@@ -28,20 +22,38 @@ B사는 새로 가입한 유저가 바로 구매까지 이어질 수 있도록 �
 
 아래 캠페인 설정을 참고해서 신규 회원에게만 제공되는 혜택을 적극적으로 소개해보세요 🙌
 
-<Expandable title="📥 예시 이미지 다운받기">
-  
+<img
+  src="/images/colduser_case_1_preview.png"
+  alt="colduser_case_1_preview.png"
+  title="colduser_case_1_preview.png"
+  style={{ width:"45%" }}
+/>
+
+<Panel>
+  <Info>Pin info to the side panel. Or add any other component.</Info>
+</Panel>
+
+<Expandable title="- 예시 이미지 다운받기📥 ">
+  <img
+    src="/images/colduser_case_1_campaign_image.png"
+    alt="colduser_case_1_campaign_image.png"
+    title="colduser_case_1_campaign_image.png"
+    style={{ width:"45%" }}
+  />
 </Expandable>
 
-<Expandable title="👥 발송 대상은 이렇게 설정해요">
+<Expandable title="- 발송 대상은 이렇게 설정해요👥">
+  ![colduser_case_1_aud.png](/images/colduser_case_1_aud.png)
+
   **조건 추가 방법**
 
   **조건:** (2일 이내 회원 가입을 진행한 유저) AND (구매를 한 번도 하지 않은 유저)
 
-  1. `이벤트 속성 기준` 선택 ➡️ `처음으로 수행한 이벤트` 선택 ➡️ `signup` 선택
-  2. `+기간 추가` ➡️ 2일 이내
-  3. `+새 필터 추가`
-  4. `이벤트 속성 기준` 선택 ➡️ `모든 이벤트` 선택 ➡️ `order` 선택
-  5. `연산자` 존재하지 않음 선택
+  1. **이벤트 속성 기준** 선택 ➡️ **처음으로 수행한 이벤트** 선택 ➡️ **signup** 선택
+  2. **\+기간 추가** ➡️ 2일 이내
+  3. **\+새 필터 추가**
+  4. **이벤트 속성 기준** 선택 ➡️ **모든 이벤트** 선택 ➡️ **order** 선택
+  5. **연산자** 존재하지 않음 선택
 </Expandable>
 
 ### 케이스 2 : **장바구니 담은 상품과 혜택 리마인드하기**
