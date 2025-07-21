@@ -7,6 +7,10 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
   "favicon": "/logo/favicon.png",
   "navigation": {
     "tabs": [
@@ -15,6 +19,7 @@
         "groups": [
           {
             "group": "시작하기",
+            "hidden": true,
             "pages": [
               "index",
               "quickstart",
