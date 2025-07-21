@@ -15,20 +15,16 @@
         "groups": [
           {
             "group": "시작하기",
-            "page": "index"
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
+            ]
           },
           {
             "group": "튜토리얼",
             "pages": [
               "tutorials/tutorial"
-            ]
-          },
-          {
-            "group": "시작하기",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
             ]
           },
           {
