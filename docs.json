@@ -20,15 +20,50 @@
           {
             "group": "시작하기",
             "pages": [
-              "index",
-              "intro",
-              "setting"
+              "0.start/index",
+              "0.start/intro",
+              "0.start/setting"
             ]
           },
           {
             "group": "튜토리얼",
             "pages": [
-              "tutorials/colduser_campaign"
+              "1.tutorials/colduser_campaign"
+            ]
+          },
+          {
+            "group": "캠페인",
+            "pages": [
+              "2.campaign/intro",
+              "2.campaign/create",
+              "2.campaign/manage",
+              "2.campaign/personal_variable",
+              "2.campaign/rec_message"
+            ]
+          },
+          {
+            "group": "시나리오 (유저 여정)",
+            "pages": [
+              "3.scenario/intro",
+              "3.scenario/create"
+            ]
+          },
+          {
+            "group": "분석",
+            "pages": [
+              "4.analytics/user_analytics",
+              "4.analytics/campaign_analytics",
+              "4.analytics/scenario_analytics"
+            ]
+          },
+          {
+            "group": "채널",
+            "pages": [
+              "5.channel/intro",
+              "5.channel/kakao",
+              "5.channel/app_push",
+              "5.channel/sms",
+              "5.channel/webhook"
             ]
           },
           {
