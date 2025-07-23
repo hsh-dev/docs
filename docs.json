@@ -43,32 +43,34 @@
             ]
           },
           {
+            "group": "오디언스",
+            "pages": [
+              "4.audience/intro"
+            ]
+          },
+          {
             "group": "분석",
             "pages": [
-              "4.analytics/user_analytics",
-              "4.analytics/campaign_analytics",
-              "4.analytics/scenario_analytics"
+              "5.analytics/user_analytics",
+              "5.analytics/campaign_analytics",
+              "5.analytics/scenario_analytics"
             ]
           },
           {
             "group": "채널",
             "pages": [
-              "5.channel/intro",
-              "5.channel/kakao",
-              "5.channel/app_push",
-              "5.channel/sms",
-              "5.channel/webhook"
+              "6.channel/intro",
+              "6.channel/kakao",
+              "6.channel/app_push",
+              "6.channel/sms",
+              "6.channel/webhook"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "데이터 연동",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "7.integration/mixpanel",
+              "7.integration/amplitude"
             ]
           }
         ]
