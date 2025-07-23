@@ -26,12 +26,6 @@
             ]
           },
           {
-            "group": "튜토리얼",
-            "pages": [
-              "1.tutorials/colduser_campaign"
-            ]
-          },
-          {
             "group": "캠페인",
             "pages": [
               "2.campaign/intro",
@@ -75,6 +69,17 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tutorial",
+        "groups": [
+          {
+            "group": "튜토리얼",
+            "pages": [
+              "1.tutorials/colduser_campaign"
             ]
           }
         ]
