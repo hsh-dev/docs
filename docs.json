@@ -85,6 +85,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Updates",
+        "groups": [
+          {
+            "group": "업데이트",
+            "pages": [
+              "updates"
+            ]
+          }
+        ]
       }
     ],
     "global": {
