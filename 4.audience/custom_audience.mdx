@@ -1,5 +1,30 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "커스텀 오디언스"
+description: "CSV 파일을 업로드해 메시지를 보내고 싶은 유저를 지정하세요"
 ---
 
+
+![Custom Audience Pn](/images/custom_audience.png)
+
+커스텀 세그먼트는 오디언스로 만들고 싶은 유저를 직접 CSV 파일로 업로드해서 등록하는 기능이에요.
+
+
+<Info>
+  CSV파일로 업로드한 유저 중 유저 데이터로 미리 등록된 유저만 커스텀 세그먼트로 만들 수 있어요. 예상 모수 확인하기를 통해서 유효한 유저 수를 확인해보세요.
+</Info>
+
+
+유저 식별자 (user_id)에 해당하는 값을 다음과 같은 형태로 저장해서 업로드하면 돼요.
+
+```
+USER_1
+USER_2
+USER_3
+USER_4
+USER_5
+...
+```
+
+<Warning>
+  현재 커스텀 오디언스는 유저 식별자로만 유저를 등록할 수 있어요. 유저의 이메일이나 전화번호로는 등록이 불가능합니다.
+</Warning>
