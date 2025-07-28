@@ -36,7 +36,7 @@
             ]
           },
           {
-            "group": "시나리오 (유저 여정)",
+            "group": "시나리오",
             "pages": [
               "3.scenario/intro",
               "3.scenario/create"
@@ -45,7 +45,8 @@
           {
             "group": "오디언스",
             "pages": [
-              "4.audience/intro"
+              "4.audience/intro",
+              "4.audience/create"
             ]
           },
           {
