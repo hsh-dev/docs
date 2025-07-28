@@ -46,7 +46,11 @@
             "group": "오디언스",
             "pages": [
               "4.audience/intro",
-              "4.audience/create"
+              "4.audience/create",
+              "4.audience/ai_audience",
+              "4.audience/rule_audience",
+              "4.audience/custom_audience",
+              "4.audience/filter"
             ]
           },
           {
