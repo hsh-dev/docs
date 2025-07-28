@@ -23,7 +23,7 @@ description: "필터로 사용되는 조건들에 대해서 알아보세요"
 | **이벤트 속성**                | **설명**       | **추가할 수 있는 속성**                                                                                                                                                |
 | :------------------------ | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | sign up                   | 회원가입         | - item_id<br />- campaign_id                                                                                                                                   |
-| purchase                  | 구매 (상품 단위)   | - paid_amount<br />- price<br />- order_id<br />- order_amount<br />- item_id<br />- campaign_id<br />- membership_discount_amount<br />- mileage_spent_amount |
+| purchase                  | 구매 (상품 단위)   | - paid_amount<br />- price<br />- order_id<br />- order_amount<br />- item_id                                                                                  |
 | coupon_used               | 쿠폰 사용        | - order_id<br />- item_id<br />- campaign_id<br />- coupon_value<br />- coupon_no                                                                              |
 | cartadd                   | 장바구니 추가      | - item_id<br />- campaign_id                                                                                                                                   |
 | orderform_view            | 주문 페이지 조회    | - item_id<br />- campaign_id                                                                                                                                   |
@@ -51,22 +51,25 @@ description: "필터로 사용되는 조건들에 대해서 알아보세요"
 
 ### 기본 유저 속성
 
-| **유저 속성**        | 설명         | **연산자**                                                      |
-| :--------------- | :--------- | :----------------------------------------------------------- |
-| age              | 유저의 나이     |                                                              |
-| available_points | 가용 포인트     |                                                              |
-| birthday         | 생일         |                                                              |
-| group_name       | 등급명        |                                                              |
-| group_no         | 등급 번호      |                                                              |
-| last_login_date  | 마지막 로그인 날짜 | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
-| name             | 이름         | - 같음(=)<br />- 같지 않음(≠)                                      |
-| signup_date      | 회원가입 날짜    | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
-| total_points     | 총 포인트      |                                                              |
-| used_points      | 사용된 포인트    |                                                              |
-| user_id          | 유저 ID      |                                                              |
-| phone_number     | 휴대폰 번호     |                                                              |
-| email_address    | 이메일        |                                                              |
-| last_active_at   | 마지막 활성화 시간 | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
+| **유저 속성**        | 설명         | 타입     | **연산자**                                                      |
+| :--------------- | :--------- | ------ | :----------------------------------------------------------- |
+| age              | 유저의 나이     | number |                                                              |
+| available_points | 가용 포인트     | number |                                                              |
+| birthday         | 생일         | date   |                                                              |
+| group_name       | 등급명        | string |                                                              |
+| group_no         | 등급 번호      | string |                                                              |
+| name             | 이름         | string | - 같음(=)<br />- 같지 않음(≠)                                      |
+| signup_date      | 회원가입 날짜    | date   | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
+| total_points     | 총 포인트      | number |                                                              |
+| used_points      | 사용된 포인트    | number |                                                              |
+| user_id          | 유저 ID      | string |                                                              |
+| phone_number     | 휴대폰 번호     | string |                                                              |
+| email_address    | 이메일        | string |                                                              |
+| last_login_date  | 마지막 로그인 날짜 | date   | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
+
+| last_active_at   | 마지막 활성화 시간 | date   | - 전체날짜(연도 포함)\
+- 월일기준(연도 무시)\
+\*이전, 이후, 특정날짜 등 선택 가능 |
 
 ### 개인화 유저 속성
 
@@ -87,7 +90,7 @@ description: "필터로 사용되는 조건들에 대해서 알아보세요"
 | latest_purchase_item_url                             | 유저가 마지막으로 구매한 상품의 url              | - 같음(=)<br />- 같지 않음(≠) |
 
 <Info>
-  lastest\_\{ 이벤트 명 \} 으로 저장되는 속성의 경우 해당 이벤트가 발생한 경우만 값이 존재합니다.
+  lastest\_{이벤트 명} 으로 저장되는 속성의 경우 해당 이벤트가 발생한 경우만 값이 존재합니다.
 
   만약 유저가 상품을 조회한 적이 없다면, latest_product_detail_view_item_url은 null 값을 가집니다.
 </Info>
