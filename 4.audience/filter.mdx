@@ -1,0 +1,121 @@
+---
+title: "오디언스 필터 조건"
+description: "필터로 사용되는 조건들에 대해서 알아보세요"
+---
+
+오디언스로 발송 대상을 선택하거나 메시지 발송에 추가 필터로 추가할 수 있는 조건은 총 4가지 종류가 있어요.
+
+- 이벤트 속성
+- 유저 속성
+- 캠페인 수신 기준
+- 결제 금액 기준
+
+---
+
+## 이벤트 속성
+
+이벤트 속성은 유저의 서비스 내 행동(ex. 회원가입, 장바구니, 구매 등)에 대한 필터이에요.
+
+<Info>
+  아래 이벤트 속성 별 설명은 기본적으로 제공되는 속성에 대한 설명이에요.
+</Info>
+
+| **이벤트 속성**                | **설명**       | **추가할 수 있는 속성**                                                                                                                                                |
+| :------------------------ | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sign up                   | 회원가입         | - item_id<br />- campaign_id                                                                                                                                   |
+| purchase                  | 구매 (상품 단위)   | - paid_amount<br />- price<br />- order_id<br />- order_amount<br />- item_id<br />- campaign_id<br />- membership_discount_amount<br />- mileage_spent_amount |
+| coupon_used               | 쿠폰 사용        | - order_id<br />- item_id<br />- campaign_id<br />- coupon_value<br />- coupon_no                                                                              |
+| cartadd                   | 장바구니 추가      | - item_id<br />- campaign_id                                                                                                                                   |
+| orderform_view            | 주문 페이지 조회    | - item_id<br />- campaign_id                                                                                                                                   |
+| alimtalk_button_clicked   | 알림톡 버튼 클릭    | - item_id<br />- campaign_id                                                                                                                                   |
+| category_page_visit       | 카테고리 페이지 조회  | - item_id<br />- campaign_id<br />- category_id                                                                                                                |
+| visit                     | 조회           |                                                                                                                                                                |
+| page_visit                | 특정 페이지 조회    | - item_id<br />- campaign_id                                                                                                                                   |
+| order                     | 구매 (주문건 단위)  | - paid_amount<br />- price<br />- order_id<br />- order_amount<br />- item_id<br />- campaign_id<br />- membership_discount_amount<br />- mileage_spent_amount |
+| product_detail_view       | 상품 상세 페이지 조회 | - item_id<br />- campaign_id                                                                                                                                   |
+| friendtalk_button_clicked | 친구톡 버튼 클릭    | - item_id<br />- campaign_id                                                                                                                                   |
+| message_received          | 메시지 수신       | - item_id<br />- campaign_id                                                                                                                                   |
+| button_clicked            | 버튼 클릭        | - item_id<br />- campaign_id<br />- notification_id                                                                                                            |
+| landing_clicked           | 랜딩페이지 클릭     | - item_id<br />- campaign_id                                                                                                                                   |
+
+---
+
+## 유저 속성
+
+유저의 고유 속성(ex. 이름, 닉네임, 생일 등)에 대한 필터이에요.
+
+유저 속성의 경우 기본 유저 속성과 개인화 유저 속성으로 나뉘어요.
+
+- 기본 유저 속성 : 데이터 연동시 전달한 기본 유저 속성이에요
+- 개인화 유저 속성 : 개인화를 위해 Blux가 저장하는 유저 속성이에요
+
+### 기본 유저 속성
+
+| **유저 속성**        | 설명         | **연산자**                                                      |
+| :--------------- | :--------- | :----------------------------------------------------------- |
+| age              | 유저의 나이     |                                                              |
+| available_points | 가용 포인트     |                                                              |
+| birthday         | 생일         |                                                              |
+| group_name       | 등급명        |                                                              |
+| group_no         | 등급 번호      |                                                              |
+| last_login_date  | 마지막 로그인 날짜 | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
+| name             | 이름         | - 같음(=)<br />- 같지 않음(≠)                                      |
+| signup_date      | 회원가입 날짜    | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
+| total_points     | 총 포인트      |                                                              |
+| used_points      | 사용된 포인트    |                                                              |
+| user_id          | 유저 ID      |                                                              |
+| phone_number     | 휴대폰 번호     |                                                              |
+| email_address    | 이메일        |                                                              |
+| last_active_at   | 마지막 활성화 시간 | - 전체날짜(연도 포함)<br />- 월일기준(연도 무시)<br />\*이전, 이후, 특정날짜 등 선택 가능 |
+
+### 개인화 유저 속성
+
+| **유저 속성**                                            | 설명                                 | **연산자**                 |
+| :--------------------------------------------------- | :--------------------------------- | :---------------------- |
+| blux_keyword_brand_name                              | 유저의 관심사 브랜드 키워드                    | - 같음(=)<br />- 같지 않음(≠) |
+| blux_keyword_category_1_name                         | 유저의 관심 대 카테고리 명                    | - 같음(=)<br />- 같지 않음(≠) |
+| blux_keyword_category_2_name                         | 유저의 관심 중 카테고리 명                    | - 같음(=)<br />- 같지 않음(≠) |
+| blux_keyword_category_3_name                         | 유저의 관심 소 카테고리 명                    | - 같음(=)<br />- 같지 않음(≠) |
+| latest_product_detail_view_item_name                 | 유저가 마지막으로 조회한 상품의 이름               | - 같음(=)<br />- 같지 않음(≠) |
+| latest_product_detail_view_item_friendtalk_image_url | 유저가 마지막으로 조회한 상품의 친구톡 이미지 url      | - 같음(=)<br />- 같지 않음(≠) |
+| latest_product_detail_view_item_url                  | 유저가 마지막으로 조회한 상품의 url              | - 같음(=)<br />- 같지 않음(≠) |
+| latest_cartadd_item_name                             | 유저가 마지막으로 장바구니에 담은 상품의 이름          | - 같음(=)<br />- 같지 않음(≠) |
+| latest_cartadd_item_friendtalk_image_url             | 유저가 마지막으로 장바구니에 담은 상품의 친구톡 이미지 url | - 같음(=)<br />- 같지 않음(≠) |
+| latest_cartadd_item_url                              | 유저가 마지막으로 장바구니에 담은 상품의 url         | - 같음(=)<br />- 같지 않음(≠) |
+| latest_purchase_item_name                            | 유저가 마지막으로 구매한 상품의 이름               | - 같음(=)<br />- 같지 않음(≠) |
+| latest_purchase_item_friendtalk_image_url            | 유저가 마지막으로 구매한 상품의 친구톡 이미지 url      | - 같음(=)<br />- 같지 않음(≠) |
+| latest_purchase_item_url                             | 유저가 마지막으로 구매한 상품의 url              | - 같음(=)<br />- 같지 않음(≠) |
+
+<Info>
+  lastest\_{이벤트 명} 으로 저장되는 속성의 경우 해당 이벤트가 발생한 경우만 값이 존재합니다.
+
+  만약 유저가 상품을 조회한 적이 없다면, latest_product_detail_view_item_url은 null 값을 가집니다.
+</Info>
+
+---
+
+## 캠페인 수신 기준
+
+특정 캠페인 수신 여부에 대한 필터이에요.
+
+---
+
+## 결제 금액 기준
+
+설정한 기간 내 유저의 총 결제 금액에 대한 필터를 추가할 수 있어요.
+
+---
+
+## 타입 별 연산자 기준
+
+속성 별로 타입이 달라요. 예를 들어 숫자(number), 문자열(string), 리스트(array), 날짜(date) 등의 타입이 있어요.
+
+오디언스 필터를 만들 때는 타입별로 다른 연산자를 적용해야 해요. 아래 표는 각 타입별로 가능한 연산자에 대한 설명이에요.
+
+| 타입      | 가능한 연산자                                                                                               |
+| ------- | ----------------------------------------------------------------------------------------------------- |
+| number  | - 같음(=) <br />- 같지 않음(≠) <br />- 보다 큼(\>) <br />- 보다 크거나 같음(≥) <br />- 보다 작음(\<) <br />- 보다 작거나 같음(≤) |
+| string  | - 같음(=) <br />- 같지 않음(≠)                                                                              |
+| date    | - 전체날짜(연도 포함) <br />- 월일기준(연도 무시) \*이전, 이후, 특정날짜 등 선택 가능                                              |
+| boolean |                                                                                                       |
+|         |                                                                                                       |
